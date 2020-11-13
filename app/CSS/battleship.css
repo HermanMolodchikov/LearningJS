@@ -1,0 +1,97 @@
+div#board {
+    position: relative;
+    width: 1024px;
+    height: 863px;
+    margin: auto;
+}
+
+div#messageArea {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: rgb(83, 175, 19);
+    border: 3px solid  rgb(83, 175, 19);
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 10px;
+}
+
+div#coin {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+table {
+    position: absolute;
+    left: 173px;
+    top: 98px;
+    border-spacing: 0px;
+}
+td {
+    width: 90px;
+    height: 90px;
+    border: solid 1px rgb(83, 175, 19);
+}
+td:hover {
+    cursor: pointer;
+}
+form {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 15px;
+    background-color: rgb(83, 175, 19);    
+    border-radius: 5px;
+}
+form input {
+    background-color: rgb(152, 207, 113);
+    border-color: rgb(83, 175, 19);
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.hit {
+    background: url("../IMG/ship.png") no-repeat center center;
+}
+.miss {
+    background: url("../IMG/miss.png") no-repeat center center;
+}
+
+.heads {
+    background: url("../IMG/heads.png") no-repeat center center;
+}
+
+.tails {
+    background: url("../IMG/tails.png") no-repeat center center;
+}
+
+/*
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #1a1a1a00; }
+    .preloader .pulse {
+      position: relative;
+      left: 50%;
+      top: 50vh;
+      margin-left: -40px;
+      margin-top: -40px; }
+      .preloader .pulse::before, .preloader .pulse::after {
+        content: '';
+        border: 5px solid #f9c766;
+        width: 800px;
+        height: 800px;
+        -webkit-border-radius: 500px;
+                border-radius: 500px;
+        position: absolute; }
+      .preloader .pulse::before {
+        -webkit-animation: pulse-outer .8s ease-in infinite;
+                animation: pulse-outer .8s ease-in infinite; }
+      .preloader .pulse::after {
+        -webkit-animation: pulse-inner .8s linear infinite;
+                animation: pulse-inner .8s linear infinite; }*/

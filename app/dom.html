@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project</title>
+	<link rel="stylesheet" href="css\style.css">
+
+	
+
+</head>
+<body>
+    <script>
+        function init() {
+            var planet = document.getElementById("greenplanet");
+            planet.innerHTML = "Red Alert: hit by phaser fire!";
+
+            var planet2 = document.getElementById("redplanet");
+            planet2.setAttribute("class", "redtext");      
+
+            var planet3 = document.getElementById("blueplanet");
+            planet3.setAttribute("class", "bluetext");
+            //planet3.setAttribute("alt", "something text");
+
+            var altText = planet3.getAttribute("alt");
+            //altText = "Text from alt"; 
+
+            //console.log("I can't see the image in the console,");
+            //console.log("but I'm told it loos like: " + altText);
+            
+            if (altText == null) {
+                console.log("Oh, I guess there isn't an alt attribute");
+            } else {
+                console.log("I can't see the image in the console,");
+                console.log(" but I'm told it looks like" + altText);
+            }
+        }
+        window.onload = init;    
+    </script>
+	
+    <a href="index.html">HOME</a>
+    <a href="foo.html">FOO</a>
+    <a href="new.html">NEW</a>
+    <a href="money.html">MONEY</a>
+    <a href="manipulation.html">MANIPULATION</a>
+    <a href="object.html">OBJECT</a>
+    <a href="arrayl.html">ARRAY</a>
+    <a href="event.html">EVENT</a>    
+    <a href="dom.html">DOM</a>
+    <a href="battleship.html">battleship</a>
+    <a href="map.html">MAP</a>
+
+    <p id="firststring">Lorem ipsum dolor
+         sit amet consectetur adipisicing elit.</p>
+    <h1>Green Planet</h1>
+    <p id="greenplanet">All is well</p>
+    <h1>Red Planet</h1>
+    <p id="redplanet">Nothing to report</p>
+    <h1>Blue Planet</h1>
+    <p id="blueplanet">All systems A-OK</p>
+
+   <script src="js/dom.js"></script>
+
+</body>
+
+	
+</html>
